@@ -1,0 +1,2 @@
+Components and their sub-components go in this directory/folder. Possible components can be such as Button, Header, Footer, Hero-Approach, etc.
+

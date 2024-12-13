@@ -1,0 +1,38 @@
+/* Ensuring the image fills the column appropriately */
+.user-area-style img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; /* Adjusts images to cover the area, might crop them */
+    display: block;
+}
+
+/* Fixed height for image container to maintain consistency */
+.user-area-style .col-md-4 {
+    height: 250px; /* Adjust based on your preference */
+    overflow: hidden;
+}
+
+/* Flexbox for vertical alignment if needed */
+.user-area-style .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Highly specific selector or use of important */
+.user-area-style .col-md-8 .read-more-btn {
+    margin: 10px 0 10px 0 !important; /* Override any other margin settings */
+    align-self: flex-start !important; /* Ensure alignment is applied */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .user-area-style .col-md-4,
+    .user-area-style .col-md-8 {
+        flex: 0 0 100%; /* Stacks the columns vertically on smaller screens */
+        max-width: 100%; /* Utilizes full width */
+    }
+    .user-area-style .col-md-4 {
+        height: 200px; /* Smaller height for smaller screens */
+    }
+}

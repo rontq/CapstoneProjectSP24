@@ -1,0 +1,92 @@
+-Component Structure-
+
+       app-root
+          |
+    router-outlet
+          |
+    page-content 
+          |
+   page-components
+
+
+page-content (Calls only one page to display):
+
+[Defined Parent Component] -> page-content/{Directory Name}: Component Name
+
+
+page-content/home: app-home,
+
+page-content/about: app-about,
+
+page-content/privacy-policy: app-privacy-policy,
+  
+page-content/internet-of-things: app-internet-of-things,
+
+page-content/encryption-lab: app-encryption-lab,
+   
+page-content/augmented-reality-lab: app-augmented-reality-lab,
+
+page-content/artificial-intelligence-lab: app-artificial-intelligence-lab,
+
+page-content/page-not-found: app-page-not-found
+
+
+page-components (Calls one or more page-component [Child Component] assets to be used in a page component [Parent Component]):
+
+[Defined Child Component] -> {Parent Directory}/{Directory Name}: Component Name
+
+
+page-components/button: app-button,
+
+page-components/footer: app-footer,
+
+page-components/geta-quote-buttom: app-geta-quote-bottom,
+
+page-components/header: app-header,
+
+header/nav-menu: app-nav-menu,
+
+nav-menu/nav-item: app-nav-item,
+
+page-components/page-title: app-page-title
+
+
+Component Functionality:
+
+
+app-home: contains the content for the home page,
+
+app-about: contains the content for the about page,
+
+app-privacy-policy: contains the content for the privacy policy page,
+
+app-internet-of-things: contains the content for the internet-of-things page,
+
+app-encryption-lab: contains the content for the encryption-lab page,
+
+app-augmented-reality-lab: contains the content for the augmented-reality-lab page,
+
+app-artificial-intelligence-lab: contains the content for the artificial-intelligence-lab page,
+
+app-page-not-found: contians the content to display a 404 error page because of an incorrect redirect/url,
+
+app-button: link -> string, url -> string, call this to display the html content in button.component.html. Can specify html like so: <app-button>
+                                                                                                                                         <span>Contact Us</span>
+                                                                                                                                     </app-button>
+
+
+
+app-footer: call this to display the html content in footer.component.html,
+
+app-header: call this to display the html content in header.component.html. This is the parent for app-nav-menu,
+
+app-nav-menu: call this to display the html content in nav-menu.component.html. This is the parent for app-nav-item,
+
+app-nav-item: url -> string, isDropdown -> boolean, navHrefs -> string[], navText -> string[],
+              call this to display the html content in nav-item.component.html. Can specify html content like so: <app-nav-item>
+                                                                                                                                About
+                                                                                                                                <i class="bx bx-chevron-down"></i>
+                                                                                                                  </app-nav-item>
+
+
+For comments and information on url routing for this project, look at app/app.routes.ts

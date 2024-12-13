@@ -1,0 +1,88 @@
+.xheader-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+}
+
+.xtop-header {
+    justify-content: space-between; /* Space between to place items at edges */
+    align-items: center; /* Align items vertically in the center */
+    padding: 10px; /* Add some padding for better spacing */
+    position: relative;
+}
+
+
+.ximage-container {
+    position: relative; /* Make the container a positioned element */
+    width: 100px; /* Set a fixed width for the image container */
+    height: 100px; /* Set a fixed height for the image container */
+    display: inline-block; /* Ensure the container is inline with the text */
+    vertical-align: middle; /* Align container vertically with text */
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+
+
+.logo, .spin {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.spin {
+    animation: rotate 12s linear infinite; 
+}
+
+.logo {
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    width: 60%; 
+    height: 60%; 
+}
+
+.xheader-right-content {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    
+}
+
+.xheader-right-content li {
+    display: inline-block;
+}
+
+.xheader-right-content li a i {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    transition: all ease 0.5s;
+    text-align: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

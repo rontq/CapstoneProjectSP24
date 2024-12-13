@@ -1,0 +1,17 @@
+<li class="nav-item">
+    <a [href]="url"
+       class="nav-link">
+       <ng-content></ng-content>
+    </a>
+    @if (isDropdown) {
+        <ul class="dropdown-menu"> <!--Creates entries based on the array of names passed-->
+            @for (href of navHrefs; track $index) {
+                <li class="nav-item">
+                    <a [href]="href" class="nav-link">
+                        {{navText[$index]}}
+                    </a>
+                </li>
+            } @empty {}
+        </ul>
+    }
+</li>

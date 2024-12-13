@@ -1,0 +1,164 @@
+<app-header></app-header>
+
+<!-- Start Page Title Area -->
+<app-page-title pageTitle="About Us"></app-page-title>
+<!-- End Page Title Area -->
+
+
+
+<!-- Start About Us Area -->
+<section class="about-us-area pt-100 pb-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="assets/img/about.png" alt="Image">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="about-title">
+                        <span>About Us</span>
+                        <h2>Six Industries of Arizona Mission Statement: To develop, provide, and support software applications, hardware innovations, and customer support modalities which create new market segments and to capitalize on emerging/existing market segments in secure integrative communications.</h2>
+                        <p><a href="home" target="_blank" style="color:#e21f36">Six Industries </a> is a veteran owned and operated company specializing in cellular phone application development for a broad customer base including markets in the civilian sector, government and defense.</p>
+                        <h3 >DUNS Number: FAR4NBLT6YZ3</h3>
+                        <h3>CAGE Code: 9KT11</h3>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Us Area -->
+
+
+
+<!-- Start Our Challenges Area -->
+<section class="challenges-area pt-100 pb-70 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="section-title white-title">
+            <span>Our Industries</span>
+            <h2>You Can Protect Your Organization’s</h2>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <app-challenge-feature
+                    [title]="'Cyber Security'"
+                    [description]="'The way we work has changed. People now work from anywhere, not just from an office...'"
+                    [img_src]="'assets/cy.png'"
+                    [link]="'https://six-industries.com/cyber-security'"
+                ></app-challenge-feature>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6">
+                <app-challenge-feature
+                    [title]="'Government & Defense'"
+                    [description]="'Innovating technology solutions to help defend the nation. Winning on the complex ...'"
+                    [img_src]="'assets/gd.png'"
+                    [link]="'https://six-industries.com/government-defense'"
+                ></app-challenge-feature>
+              </div>
+    
+              <div class="col-lg-3 col-sm-6">
+                <app-challenge-feature
+                    [title]="'Emergency Management'"
+                    [description]="'Engaging citizens. Supporting the mission. Whether ensuring the safety, security,...'"
+                    [img_src]="'assets/em.png'"
+                    [link]="'https://six-industries.com/emergencymanagement'"
+                ></app-challenge-feature>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6">
+                <app-challenge-feature
+                    [title]="'Logistics'"
+                    [description]="'Six Industries Inc is transforming the supply chain industry by replacing opaque ...'"
+                    [img_src]="'assets/loc.png'"
+                    [link]="'https://six-industries.com/logisticssoftwaresolutions'"
+                ></app-challenge-feature>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Challenges Area -->
+
+
+
+<!-- Start Our Approach Area -->
+<section class="our-approach-area our-approach-area-four pb-70" style="padding-top: 70px">
+    <div class="container">
+        <div class="section-title">
+            <span>Our Technologies</span>
+            <h2>
+                Six Industries Inc Mission Statement
+            </h2>
+        </div>
+
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="approach-img">
+                    <img src="assets/img/approach-img-4.jpg" alt="Image">
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6">
+                <div class="approach-content">
+                    <h3> To develop, provide, and support software applications, hardware innovations, and customer support modalities which create new market segments and to capitalize on emerging/existing market segments in secure integrative communications.</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <app-approach   
+                                link="https://six-industries.com/internet-of-things" 
+                                title="Internet of Things (IoT)" 
+                                content="The engineers of Six Industries Inc's Internet of Things Lab (IOT)...">
+                            </app-approach>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <app-approach
+                                link="https://six-industries.com/encryption-lab"
+                                title="Encryption"
+                                content="At Six Industries Inc we are always pushing the envelope, we do not...">
+                            </app-approach>
+                        </div>
+                        
+                        <div class="col-lg-6 col-sm-6">
+                            <app-approach
+                                link="https://six-industries.com/augmented-reality-lab"
+                                title="Extended Reality (A.R.)"
+                                content="A company with a strong focus on emerging technology, Six Industry Inc...">
+                            </app-approach>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6">
+                            <app-approach
+                                link="https://six-industries.com/"
+                                title="Cognitive Computing"
+                                content="Six Industries Inc solves high-impact problems by developing computationally ...">
+                            </app-approach>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <p>
+                    Six Industries Inc was formed in early 2020 to improve the lives, safety and convenience of our customers. By specializing in specific niche integrated cellular phone application development, we address a broad customer base including markets in the civilian/commercial sectors, government and defense. In these times, secure integrated communications, accurate geolocation and micro–networking enables the protection of those you care about. You will rest easy knowing Six Industries Inc has your back.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Approach Area -->
+
+
+
+<app-footer/>
